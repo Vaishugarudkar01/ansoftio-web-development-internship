@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+        background: #222;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        color: #00bcd4;
+    }
+
+    /* Sections */
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    #home {
+        background: #f9f9f9;
+    }
+
+    #about {
+        background: #ffffff;
+    }
+
+    #skills {
+        background: #f9f9f9;
+    }
+
+    #contact {
+        background: #ffffff;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    /* Skills */
+    .skills span {
+        display: inline-block;
+        background: #eee;
+        margin: 5px;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    /* Form */
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        margin: 8px 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        background: #00bcd4;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0097a7;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<section id="home">
+    <h1>Vaishnavi Garudkar</h1>
+    <p>Welcome to my simple and clean portfolio website.</p>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an MCA student who enjoys learning web development and Python.
+        I like building simple and useful websites.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>SQL</span>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>

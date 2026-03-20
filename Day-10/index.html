@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Design</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 2px solid #ddd;       /* Border */
+            width: 250px;                /* Card width */
+            margin: 20px;                /* Space between cards */
+            padding: 15px;               /* Inner spacing */
+            background-color: #ffffff;   /* Background color */
+            text-align: center;          /* Center content */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color: #ff7f50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #e5673f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/da/1c/97/da1c97e6100e17a9e4bdf5a2b2e1c043.jpg" alt="Image">
+        <h3>Card Title 1</h3>
+        <p>This is a simple description of the card content.</p>
+        <button>Read More</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="https://balloonxpressions.com/wp-content/uploads/2024/10/red-roses-heart-flower.webp" alt="Image">
+        <h3>Card Title 2</h3>
+        <p>This is another description for the second card.</p>
+        <button>Read More</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="https://res.cloudinary.com/dizexseir/image/upload/v1628079762/ProImages/itn73xt9osrtutwvfmhn.png" alt="Image">
+        <h3>Card Title 3</h3>
+        <p>This is a description for the third card.</p>
+        <button>Read More</button>
+    </div>
+
+</body>
+</html>

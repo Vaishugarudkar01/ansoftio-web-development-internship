@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enhanced DOM Task</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:300px;
+}
+
+h1{
+    transition: 0.4s;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    margin-top:15px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    background:#4facfe;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:black;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+    margin-top:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1 id="heading">Welcome Student</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <div id="error" class="error"></div>
+
+    <button onclick="updateName()">Update Name</button>
+</div>
+
+<script>
+function updateName(){
+    let username = document.getElementById("name").value.trim();
+    let errorMsg = document.getElementById("error");
+
+    if(username === ""){
+        errorMsg.innerHTML = "⚠️ Please enter your name";
+        return;
+    }
+
+    errorMsg.innerHTML = "";
+
+    let heading = document.getElementById("heading");
+    heading.innerHTML = "👋 Welcome " + username;
+
+    // Animation effect
+    heading.style.transform = "scale(1.2)";
+    setTimeout(() => {
+        heading.style.transform = "scale(1)";
+    }, 300);
+}
+</script>
+
+</body>
+</html>
